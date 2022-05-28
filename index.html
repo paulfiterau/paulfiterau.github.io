@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://www.cs.ru.nl/~pfiteraubrostean/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+        <title>My place of mind</title>
+        <link rel="stylesheet" type="text/css" href="./files/global.css">
+        <style>
+            #para1 {
+                text-align: center;
+                color: red;
+            }
+        </style>
+    <style type="text/css"></style></head>
+    <body onload="updateHello('en')">
+        <!-- 
+        <nav>
+            <ul id="mainmenu" class="clearfix">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+        </nav> -->
+        <div name="subtitle" id="about">About </div>
+        <img src="./files/me.jpg" width="10%" height="10%" style="float:right;" \="">
+        
+        <p><div id="helloMsg"><script>sayHello("en")</script></div></p>
+        
+        
+        <!-- <input type="text" name="query" value="en"> -->
+        <select id="selLang" name="Hello Lang." onchange="updateHello()">
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="ro">Romanian</option>
+        </select>
+        <script>
+            function sayHello(language) {
+                var msg;
+                switch(language)  {
+                    case "en": 
+                        msg = "Hello! My name is Paul. I'm a PhD student in Nijmegen. Leave your worries at the door, everything will be OK."
+                    break;
+                    case "de":
+                        msg = "Hallo! Ich heiße Paul. Ich bin ein PhD Student in Nijmegen. Sorgen Sie sich nicht! Alles wird OK sein."
+                        break;
+                    case "ro":
+                        msg = "Ceau! Numele meu este Paul. Sunt student PhD in Nijmegen. N-aveti griji, totul va fi bine!"
+                        break;
+                    default:
+                        msg = "Hello in some alien language"
+                        break;
+                }
+                return msg; 
+            }
+            
+            function updateHello() {
+                var selectedLanguage = document.getElementById("selLang");
+                newHelloMsg = sayHello(selectedLanguage.value)
+                var sayHelloDiv = document.getElementById("helloMsg");
+                sayHelloDiv.innerHTML =newHelloMsg
+            }
+            
+        </script>
+        
+        
+        <p>
+        I am a Computer Science PhD student at Radboud University Nijmegen. My work involves <a href="./learning.html"> 
+        model learning techniques</a> and their application to real-world systems. Aside from that, I am always looking to improve my knowledge on 
+        computers, programming... 
+        
+        That is, when I'm not singing, browsing Internet overloading my mind with irrelevant information...
+        </p>
+        
+        <div name="subtitle" id="research">Research Interest</div>
+        <p>
+        As previously mentioned, my research area is model learning and its application. In particular, my focus is on developing model learning
+        techniques for Register Automata, formalisms that allow the representation of data flow. A side goal is to apply model learning to practical
+        software, like network protocols. 
+        </p>
+        
+        <p>
+        More generally, my research interests lie in:
+        <ul id="interestlist">
+        <li> model learning algorithms and applications</li>
+        <li> conformance and model-based testing </li>
+        <li> reverse engineering </li>
+        <li> application of formal methods to practice </li>
+        <li> network protocols </li>
+        </ul>
+        </p>
+        
+        <div name="subtitle" id="teaching">Teaching</div>
+        <p>
+        I assisted with the following courses at Radboud University: 
+        <ul id="courselist">
+        <li> Computer Networking 2016-2017 </li>
+        <li> Computer Networking 2015-2016 </li>
+        <li> Testing Techniques 2014-2015 </li>
+        <li> Computer Networking 2014-2015 </li>
+        <li> Testing Techniques 2013-2014</li>
+        </ul>
+        </p>
+        
+        <div name="subtitle" id="publications">Publications</div>
+        <p>
+        A listing of all my scientific contributions:
+   
+        <table>
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="AFKV15">1</a>]
+        </td>
+        <td class="bibtexitem">
+        F.&nbsp;Aarts, P.&nbsp;Fiter&#x101;u-Brostean, H.&nbsp;Kuppens, and F.&nbsp;W. Vaandrager.
+        Learning register automata with fresh value generation.
+        In <em>ICTAC 2015</em>, volume 9399 of <em>LNCS</em>, pages 165-183.
+        Springer, 2015.
+        [&nbsp;<a href="publications_bib.html#AFKV15">bib</a>&nbsp;][&nbsp;<a href="publications\2015-ICTAC.pdf">pdf</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="AFKV16">2</a>]
+        </td>
+        <td class="bibtexitem">
+        F.&nbsp;Aarts, P.&nbsp;Fiter&#x101;u-Brostean, H.&nbsp;Kuppens, and F.&nbsp;W. Vaandrager.
+        Learning register automata with fresh value generation.
+        <em>Submitted to MSCS</em>, 2016.
+        [&nbsp;<a href="publications_bib.html#AFKV16">bib</a>&nbsp;]
+
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="FJV2014">3</a>]
+        </td>
+        <td class="bibtexitem">
+        P.&nbsp;Fiter&#x101;u-Brostean, R.&nbsp;Janssen, and F.W. Vaandrager.
+        Learning fragments of the TCP network protocol.
+        In <em>FMICS 2014</em>, volume 8718 of <em>LNCS</em>, pages 78-93.
+        Springer, 2014.
+        [&nbsp;<a href="publications_bib.html#FJV2014">bib</a>&nbsp;][&nbsp;<a href="publications\2014-FMICS.pdf">pdf</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="FJV2016">4</a>]
+        </td>
+        <td class="bibtexitem">
+        P.&nbsp;Fiter&#x101;u-Brostean, R.&nbsp;Janssen, and F.W. Vaandrager.
+        Combining model learning and model checking to analyze TCP
+        implementations.
+        In <em>CAV 2016</em>, volume 9780 of <em>LNCS</em>, pages 454-471.
+        Springer, 2016.
+        [&nbsp;<a href="publications_bib.html#FJV2016">bib</a>&nbsp;][&nbsp;<a href="publications\2016-CAV.pdf">pdf</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="FH2017">5</a>]
+        </td>
+        <td class="bibtexitem">
+        Paul Fiter&#x101;u-Brostean and Falk Howar.
+        Learning-based testing the sliding window behavior of TCP
+        implementations.
+        In <em>Critical Systems: Formal Methods and Automated Verification</em>,
+        pages 185-200. Springer, 2017.
+        [&nbsp;<a href="publications_bib.html#FH2017">bib</a>&nbsp;][&nbsp;<a href="publications\2017-FMICS.pdf">pdf</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="SF2017">6</a>]
+        </td>
+        <td class="bibtexitem">
+        R.&nbsp;Smetsers, P.&nbsp;Fiter&#x101;u-Brostean, and F.W. Vaandrager.
+        Model learning as a satisfiability modulo theories problem
+        <em>Work in progress</em>, 2017.
+        [&nbsp;<a href="publications_bib.html#SF2017">bib</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="SPIN2017">7</a>]
+        </td>
+        <td class="bibtexitem">
+        P.&nbsp;Fiter&#x101;u-Brostean, T.&nbsp;Lenaerts, J.&nbsp;de&nbsp;Ruiter, E.&nbsp;Poll, F.W.
+        Vaandrager, and P.&nbsp;Verleg.
+        Model learning and model checking of ssh implementations.
+        In <em>Proceedings of the 24th ACM SIGSOFT International SPIN
+        Symposium on Model Checking of Software</em>, SPIN 2017, pages 142-151. ACM,
+        2017.
+        [&nbsp;<a href="publications_bib.html#SPIN2017">bib</a>&nbsp;][&nbsp;<a href="publications\2017-SPIN.pdf">pdf</a>&nbsp;]
+        
+        </td>
+        </tr>
+        </table>
+        </p>
+
+        <div name="subtitle" id="hobbies">Hobbies</div>
+        <p>
+        I love singing, staying informed (thanks BBC), gaming and just going for a walk. Also do running, more for keeping my health in check than for the love of it.
+        </p>
+        
+        <p><em>The publications section was generated with the help of 
+        <a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a> 1.95.</em></p>
+</body></html>

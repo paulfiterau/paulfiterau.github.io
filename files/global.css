@@ -1,0 +1,96 @@
+body {
+    font-size: 100%;
+    margin-right: 20%
+}
+
+.center {
+    text-align: center; 
+    color: red;
+}
+
+[name="subtitle"] {
+    font-size: 20px;
+    color: red;
+}
+
+/* img[name="help"] { display: none; } */
+div.subtitle {
+    font-size: 100px;
+    color: red;
+}
+
+p {
+    color: black
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* unvisited link */
+a:link {
+color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+color: #0000FF;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+a:link {
+    /* background-color: #B2FF99; */
+    color: #B2FF99;
+}
+
+a:visited {
+    background-color: #FFFF85;
+}
+
+a:hover {
+    /*background-color: #FF704D; */
+    color: #FF704D;
+}
+
+a:active {
+    background-color: #FF704D;
+}
+
+hr {
+    color: sienna;}
+p.description{
+    margin-left: 20px;
+    color: black;
+    text-shadow:2px 2px #FF0000;
+    font-family: "Times New Roman";
+    font-style: oblique;
+    font-size: 2.5em;}
+body {
+    background-color: #6495ed;
+    background-image: url("images/background.gif");}

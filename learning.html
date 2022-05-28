@@ -1,0 +1,40 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+        <title>Model Learning</title>
+        <link rel="stylesheet" type="text/css" href="./files/global.css">
+    <style type="text/css"></style></head>
+    <body>
+        <div name="subtitle" id="activelearning">Model Learning</div>
+        <p>
+        Model learning algorithms allow you to automatically infer behavioral models 
+        (typically some state machine) for <b>black-box systems</b> (systems with well defined input/output interfaces, whose source code 
+        need not be accessible). We refer to <i>learner</i> as the software component implementing a learning algorithm.
+        </p>
+        <p>
+        Model learning hinges on the ability of the learner to generate a model consistent with set of <i>observations</i> of the system behavior.
+        An observation comprises a sequence of inputs together with output information describing how the system reacts upon receiving these inputs. 
+        Such information is generally (but not necessarily) a sequence of outputs.
+        </p>
+        <p>
+        Depending on how observations are generated, there are two ways in which learning can be done. 
+        In <i>passive learning</i>, a static set of observations is supplied to the learner, which then outputs a model consistent with the observations. 
+        The set of observations can be logs of the system behavior or network traces.
+        In <i>active learning</i>, the learner generates observations on-the-fly by building and running queries (sequences of inputs) on the system.        
+        </p>
+        
+        <p>
+        It is important to always be aware of the limitations of the learning algorithms/tools before you start learning. 
+        Limitations generally refer to constraints in the expressibility of the systems that can be learned. 
+        Not so long ago, most learn-able systems had to be describable by Mealy Machines. 
+        Unfortunately, Mealy Machines are limited in their expressivity, since their interfaces only support abstract inputs and outputs.
+        Real systems have often parameterized with large parameter domains.
+        These systems are better described by Extended Finite State Machines (EFSMs), machines with parameterized interfaces.
+        It is in adapting learning algorithms for these systems that the core of my research lies, as well as in using learning in real-world case studies
+        such as network protocols. 
+        </p>
+        
+        <p>
+        <a href="./index.html">back</a>
+        </p>
+    </body>
+</html>
