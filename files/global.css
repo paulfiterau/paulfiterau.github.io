@@ -10,13 +10,13 @@ body {
 
 [name="subtitle"] {
     font-size: 20px;
-    color: red;
+    color: black;
 }
 
 /* img[name="help"] { display: none; } */
 div.subtitle {
     font-size: 100px;
-    color: red;
+    color: black;
 }
 
 p {
@@ -35,7 +35,7 @@ color: #FF0000;
 
 /* visited link */
 a:visited {
-color: #00FF00;
+color: mediumaquamarine;
 }
 
 /* mouse over link */
@@ -66,11 +66,11 @@ a:active {
 
 a:link {
     /* background-color: #B2FF99; */
-    color: #B2FF99;
+    color: mediumblue;
 }
 
 a:visited {
-    background-color: #FFFF85;
+    background-color: mediumaquamarine;
 }
 
 a:hover {
@@ -92,5 +92,5 @@ p.description{
     font-style: oblique;
     font-size: 2.5em;}
 body {
-    background-color: #6495ed;
+    background-color: whitesmoke;
     background-image: url("images/background.gif");}
