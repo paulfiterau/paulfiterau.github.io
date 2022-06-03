@@ -19,6 +19,11 @@ div.subtitle {
     color: black;
 }
 
+#name {
+    font-size: 40px;
+    color: black;
+}
+
 p {
     color: black
 }
