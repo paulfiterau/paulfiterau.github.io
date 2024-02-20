@@ -2,7 +2,7 @@
 <!-- saved from url=(0038)http://www.cs.ru.nl/~pfiteraubrostean/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-        <title>Paul Fiterau</title>
+        <title>My place of mind</title>
         <link rel="stylesheet" type="text/css" href="./files/global.css">
         <style>
             #para1 {
@@ -11,7 +11,7 @@
             }
         </style>
     <style type="text/css"></style></head>
-    <body onload="updateHello('en')">
+    <body>
         <!-- 
         <nav>
             <ul id="mainmenu" class="clearfix">
@@ -22,284 +22,278 @@
                 <li><a href="#hobbies">Hobbies</a></li>
             </ul>
         </nav> -->
-        <div name="subtitle" id="name">Paul Fiterau</div>
-        <img src="./files/me.jpg" width=150px height=150px style="float:right;" \="">
-        
+        <div name="subtitle" id="about">About </div>
+        <img src="./files/me.jpg" width="10%" height="10%" style="float:right;" \="">
+     
         <p>
-        I am a postdoctoral researcher at Uppsala University. 
-        Previously, I completed my PhD at Radboud University Nijmegen before working as a Software Developer in industry for a brief period. 
-        To find out more about me and my background, check my <a href="./files/CV.pdf">CV</a>.
-        <br/>
-        My work involves developing effective and (ideally) automated techniques for testing stateful systems, particularly network protocol implementations.
-        These techniques have so far been based on model learning or symbolic execution.
+        My name is Paul Fiterau.
+        I have worked as postdoctoral researcher and lecturer at Uppsala University. 
+        Before that, I had completed my PhD in Computer Science at Radboud University Nijmegen.
+        Before that, I did my Bachelor's and Master's in Computer Science at Politehnica University of Timisoara.
+        Between my PhD and postdoc I worked as a software developer, which I also did during my Master's.
+        
         </p>
         
-        <div name="subtitle" id="research">Research Interests</div>
+        <div name="subtitle" id="research">Research</div>
+        <p>
+        
+        My research lies squarely in the area of software testing with focus on security.
+        A center point of my research is a black-box testing technique known as active automata learning, or model learning for short.
+        This technique has been proven effective for testing implementations of network protocols including TCP, SSH, DTLS, IPsec, Bluetooth Low Energy, WiFi...
+        I am interested both in improving the technique for the purpose of testing, as well as broadening its application.
+        I also want to develop techniques for automated testing leveraging other, often complementary methods (e.g., symbolic execution, fuzzing, etc.), so that no bug is sparred detection.
+        </p>
         
         <p>
-        My research interests lie in:
-        
+        Broadly speaking broadly, my research interests lie in:
         <ul id="interestlist">
-            <li> network security and protocol testing </li>
-            <li> formal methods for security </li>
+            <li> model learning </li>
+            <li> model-based testing </li>
+            <li> symbolic execution </li>
+            <li> network protocol testing</li>
+            <li> fuzzing </li>
         </ul>
         </p>
-
-        <div name="subtitle" id="tools">Software Tools</div>
+        
+        
+        <div name="subtitle" id="teaching">Software</div>
         <p>
-        Below are some of the notable tools I made significant contributions to (and possibly still am). 
-        <ul class="tools">
-            <li> <a href="https://github.com/assist-project/dtls-fuzzer">DTLS-Fuzzer</a> - protocol state fuzzer for DTLS </li>
-            <li> <a href="https://github.com/pfg666/tcp-learner">tcp-learner</a> - protocol state fuzzer for TCP </li>
-            <li> <a href="https://www.tomte.cs.ru.nl/">Tomte</a> - learning framework for Register Automata using a CEGAR approach</li>
-            <li> <a href="https://gitlab.science.ru.nl/rick/z3gi">Z3GI</a> - learning framework based on SMT solvers, for a variety of formalisms</li>
-            <li> <a href="https://github.com/LearnLib/ralib">RALib</a> - learning framework for Register Automata </li>
-        </ul>
-
-        I also made contributions to: 
-        <ul class="tools">
-            <li> <a href="https://github.com/tls-attacker/TLS-Attacker">TLS-Attacker</a> - popular framework for testing (D)TLS stacks </li>
+        Tool building has been an essential part of my work.
+        I contributed to several software projects. Among these I mention:
+        <ul id="softwarelist">
+        <li> <a href="https://github.com/assist-project/dtls-fuzzer">DTLS-Fuzzer</a> a learning setup for DTLS stacks</li>
+        <li> <a href="http://tomte.cs.ru.nl/">Tomte</a> an active learner for Register Automata which are automata with parameterized inputs/outputs supporting equality conditions, assignment operations and arbitrary output value generation</li>
+        <li> <a href="https://gitlab.science.ru.nl/rick/z3gi">Z3GI</a> an passive/active learner for various automata which uses the Z3 SMT solver</li>
+        <li> <a href="https://gitlab.science.ru.nl/pfiteraubrostean/tcp-learner">tcp-learner</a> a learning setup for learning TCP stacks using abstract alphabets</li>
         </ul>
         </p>
-
+        
         <div name="subtitle" id="teaching">Teaching</div>
         <p>
-            I was lecturer for the following courses at Uppsala University: 
-            <ul id="courselist">
-                <li> Internet of Things 2022-2023</li>
-                <li> Programming Embedded Systems Project 2022-2023</li>
-                <li> Secure Computer Systems 2022-2023</li>
-                <li> Secure Computer Systems 2021-2022 </li>
-                <li> Programming Embedded Systems 2019-2020 </li>
-            </ul>
-        </p>
-    
-        <p>
-
+        I was a lecturer for the following courses at Uppsala University:
+        <ul id="courselist">
+        <li> Information Management Systems 2023-2024 </li>
+        <li> Introduction to IT 2023-2024 </li>
+        <li> Internet of Things 2022-2023 </li>
+        <li> Programming Embedded Systems Project 2022-2023 </li>
+        <li> Secure Computing Systems 2022-2023 </li>
+        <li> Secure Computing Systems 2021-2022 </li>
+        <li> Programming Embedded Systems 2019-2020 </li>
+        </ul>
+        
         I assisted with the following courses at Radboud University: 
         <ul id="courselist">
-            <li> Computer Networking 2016-2017 </li>
-            <li> Computer Networking 2015-2016 </li>
-            <li> Testing Techniques 2014-2015 </li>
-            <li> Computer Networking 2014-2015 </li>
-            <li> Testing Techniques 2013-2014</li>
-            </ul>
-        </p>
-
-        <div name="subtitle" id="supervision">Supervision</div>
-
-        <p>
-        I am currently a official supervisor for PhD students Hooman Asadian and Fredrik Tåkvist.
-        Over the course of my academic career, I supervised the following students towards completion of their Master's/Bachelor's theses:
-        <p>
-        <ul id="supervisorlist">
-            <li> Robert Lasu, 2023, Bachelor's Thesis: Analysing SSH Clients Using Protocol State Fuzzing</li>
-            <li> Rahbar Ghori, 2021, Master's Thesis: Protocol-aware fuzzing of DTLS</li>
-            <li> Fredrik Tåkvist, 2020, Bachelor's Thesis: Analysis of DTLS Implementations Using State Fuzzing</li>
-            <li> Toon Laenarts, 2017, Bachelor's Thesis: Improving Protocol State Fuzzing of SSH</li>
-            <li> Ramon Jansen, 2015, Master's Thesis: Learning and Model Checking Real-world TCP Implementations</li>
+        <li> Computer Networking 2016-2017 </li>
+        <li> Computer Networking 2015-2016 </li>
+        <li> Testing Techniques 2014-2015 </li>
+        <li> Computer Networking 2014-2015 </li>
+        <li> Testing Techniques 2013-2014</li>
         </ul>
-        </p>
-
-        I also served as reviewer/reader for the following students:
-        <p>
-            <ul id="reviewerlist">
-                <li> Cristopher Ekström, 2022, Bachelor's Thesis: Assessing the threat posed by USB devices</li>
-                <li> Judith van Stegeren, 2015, Master's Thesis: Correctness and termination of Tomte components for active register automata learning</li>
-            </ul>
-        </p>
         </p>
         
         <div name="subtitle" id="publications">Publications</div>
         <p>
         A listing of all my scientific contributions:
+   
+        
         <table>
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="TACAS2024">1</a>]
+        </td>
+        <td class="bibtexitem">
+        Simon Dierl, Fiter&#x103;u-Brostean, Paul, Falk Howar, Bengt
+          Jonsson, Konstantinos Sagonas, and Fredrik T&aring;kvist.
+         Scalable tree-based register automata learning.
+         In <em>International Conference on Tools and Algorithms for the
+          Construction and Analysis of Systems</em>, 2024.
+        [&nbsp;<a href="publications_bib.html#TACAS2024">BIB</a>&nbsp;| 
+        <a href="https://arxiv.org/pdf/2401.14324.pdf">PDF</a>&nbsp;]
 
-            <tr valign="top">
-                <td align="right" class="bibtexnumber">
-                [<a name="NDSS2023">1</a>]
-                </td>
-                <td class="bibtexitem">
-                Paul Fiter&#x103;u-Bro&#x015F;tean, Bengt Jonsson, Konstantinos Sagonas, and
-                  Fredrik T&aring;kvist.
-                 Automata-based automated detection of state machine bugs in protocol
-                  implementations.
-                 In <em>NDSS</em>, 2023.
-                [&nbsp;<a href="publications_bib.html#NDSS2023">bib</a>&nbsp;][&nbsp;<a href="publications/2023-NDSS.pdf">pdf</a>&nbsp;]  
-            </td>
-            </tr>
-                
+        </td>
+        </tr>
 
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="DTLSFUZZER2022">2</a>]
-            </td>
-            <td class="bibtexitem">
-            Paul Fiter&#x103;u-Bro&#x015F;tean, Bengt Jonsson, Konstantinos Sagonas, and
-              Fredrik T&aring;kvist.
-             DTLS-Fuzzer: A DTLS protocol state fuzzer.
-             In <em>2022 IEEE Conference on Software Testing, Verification and
-              Validation (ICST)</em>, pages 456--458. IEEE, 2022.
-            [&nbsp;<a href="publications_bib.html#DTLSFUZZER2022">bib</a>&nbsp;][&nbsp;<a href="publications/2022-DTLS-Fuzzer.pdf">pdf</a>&nbsp;]
-            
-            </td>
-            </tr>
-            
-            
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="ICST2022">3</a>]
-            </td>
-            <td class="bibtexitem">
-            Hooman Asadian, Paul Fiter&#x103;u-Bro&#x015F;tean, Bengt Jonsson, and
-              Konstantinos Sagonas.
-             Applying symbolic execution to test implementations of a network
-              protocol against its specification.
-             In <em>2022 IEEE Conference on Software Testing, Verification and
-                Validation (ICST)</em>, pages 70--81. IEEE, 2022.
-            [&nbsp;<a href="publications_bib.html#ICST2022">bib</a>&nbsp;][&nbsp;<a href="publications/2022-ICST.pdf">pdf</a>&nbsp;]
-            
-            </td>
-            </tr>
-            
-            
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="USENIX2020">4</a>]
-            </td>
-            <td class="bibtexitem">
-            Paul Fiter&#x103;u-Bro&#x015F;tean, Bengt Jonsson, Robert Merget, Joeri
-              de&nbsp;Ruiter, Konstantinos Sagonas, and Juraj Somorovsky.
-             Analysis of DTLS implementations using protocol state fuzzing.
-             In <em>29th USENIX Security Symposium (USENIX Security 20)</em>,
-              2020.
-            [&nbsp;<a href="publications_bib.html#USENIX2020">bib</a>&nbsp;][&nbsp;<a href="publications/2020-USENIX.pdf">pdf</a>&nbsp;][&nbsp;<a href="https://www.usenix.org/conference/usenixsecurity20/presentation/fiterau-brostean">presentation</a>&nbsp;]
-            
-            </td>
-            </tr>
-            
-            
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="PhDThesis">5</a>]
-            </td>
-            <td class="bibtexitem">
-            Paul Fiter&#x103;u-Bro&#x015F;tean.
-             <em>Active Model Learning for the Analysis of Network Protocols</em>.
-             PhD thesis, Radboud University Nijmegen, 2018.
-            [&nbsp;<a href="publications_bib.html#PhDThesis">bib</a>&nbsp;][&nbsp;<a href="http://www.cs.ru.nl/~pfiteraubrostean/publications/2018-thesis.pdf">pdf</a>&nbsp;]
-            
-            </td>
-            </tr>
-            
-            
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="LATA2018">6</a>]
-            </td>
-            <td class="bibtexitem">
-            Rick Smetsers, Paul Fiter&#x103;u-Bro&#x015F;tean, and Frits Vaandrager.
-             Model learning as a satisfiability modulo theories problem.
-             In <em>International Conference on Language and Automata Theory and
-              Applications</em>, pages 182--194. Springer, 2018.
-            [&nbsp;<a href="publications_bib.html#LATA2018">bib</a>&nbsp;][&nbsp;<a href="publications/2018-LATA.pdf">pdf</a>&nbsp;]
-            
-            </td>
-            </tr>
-            
-            
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="FH2017">7</a>]
-            </td>
-            <td class="bibtexitem">
-            Paul Fiter&#x103;u-Bro&#x015F;tean and Falk Howar.
-             Learning-based testing the sliding window behavior of TCP
-              implementations.
-             In <em>Critical Systems: Formal Methods and Automated Verification</em>,
-              pages 185--200. Springer, 2017.
-            [&nbsp;<a href="publications_bib.html#FH2017">bib</a>&nbsp;][&nbsp;<a href="publications/2017-FMICS.pdf">pdf</a>&nbsp;]
-            
-            </td>
-            </tr>
-            
-            
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="SPIN2017">8</a>]
-            </td>
-            <td class="bibtexitem">
-            Paul Fiter&#x103;u-Bro&#x015F;tean, Toon Lenaerts, Erik Poll, Joeri de&nbsp;Ruiter,
-              Frits Vaandrager, and Patrick Verleg.
-             Model learning and model checking of SSH implementations.
-             In <em>Proceedings of the 24th ACM SIGSOFT International SPIN
-              Symposium on Model Checking of Software</em>, SPIN 2017, pages 142--151. ACM,
-              2017.
-            [&nbsp;<a href="publications_bib.html#SPIN2017">bib</a>&nbsp;][&nbsp;<a href="publications/2017-SPIN.pdf">pdf</a>&nbsp;]
-            
-            </td>
-            </tr>
-            
-            
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="FJV2016">9</a>]
-            </td>
-            <td class="bibtexitem">
-            Paul Fiter&#x103;u-Bro&#x015F;tean, Ramon Janssen, and Frits Vaandrager.
-             Combining model learning and model checking to analyze TCP
-              implementations.
-             In <em>CAV 2016</em>, volume 9780 of <em>LNCS</em>, pages 454--471.
-              Springer, 2016.
-            [&nbsp;<a href="publications_bib.html#FJV2016">bib</a>&nbsp;][&nbsp;<a href="publications/2016-CAV.pdf">pdf</a>&nbsp;]
-            
-            </td>
-            </tr>
-            
-            
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="AFKV15">10</a>]
-            </td>
-            <td class="bibtexitem">
-            Fides Aarts, Paul Fiter&#x103;u-Bro&#x015F;tean, Harco Kuppens, and Frits
-              Vaandrager.
-             Learning register automata with fresh value generation.
-             In <em>ICTAC 2015</em>, volume 9399 of <em>LNCS</em>, pages 165--183.
-              Springer, 2015.
-            [&nbsp;<a href="publications_bib.html#AFKV15">bib</a>&nbsp;][&nbsp;<a href="publications/2015-ICTAC.pdf">pdf</a>&nbsp;]
-            
-            </td>
-            </tr>
-            
-            
-            <tr valign="top">
-            <td align="right" class="bibtexnumber">
-            [<a name="FJV2014">11</a>]
-            </td>
-            <td class="bibtexitem">
-            Paul Fiter&#x103;u-Bro&#x015F;tean, Ramon Janssen, and Frits Vaandrager.
-             Learning fragments of the TCP network protocol.
-             In <em>FMICS 2014</em>, volume 8718 of <em>LNCS</em>, pages 78--93.
-              Springer, 2014.
-            [&nbsp;<a href="publications_bib.html#FJV2014">bib</a>&nbsp;][&nbsp;<a href="publications/2014-FMICS.pdf">pdf</a>&nbsp;]
-            
-            </td>
-            </tr>
-            </table>
-        </p>
 
-        <div name="subtitle" id="contact">Contact</div>
-        <p>
-        I can be contacted at "fiteraup+at+yahoo+dot+com", or at  my University email address, which currently is "paul+dot+fiterau_brostean+at+it+dot+uu+dot+se".
-        I can also be reached via Skype, noting that my yahoo username is equal to my Skype username.
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="NDSS2023">2</a>]
+        </td>
+        <td class="bibtexitem">
+        Fiter&#x103;u-Brostean, Paul, Bengt Jonsson, Konstantinos
+          Sagonas, and Fredrik T&aring;kvist.
+         Automata-based automated detection of state machine bugs in protocol
+          implementations.
+         In <em>Network and Distributed System Security Symposium 2023
+          (NDSS)</em>, 2023.
+        [&nbsp;<a href="publications_bib.html#NDSS2023">BIB</a>&nbsp;|
+        <a href="https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s68_paper.pdf">PDF</a>&nbsp;]
+
+        </td>
+        </tr>
+
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="DTLSFUZZER2022">3</a>]
+        </td>
+        <td class="bibtexitem">
+        Paul Fiter&#x103;u-Brostean, Bengt Jonsson, Konstantinos Sagonas, and
+        Fredrik T&aring;kvist.
+        DTLS-Fuzzer: A DTLS protocol state fuzzer.
+        In <em>ICST 2022</em>, 2022.
+        [&nbsp;<a href="publications_bib.html#DTLSFUZZER2022">BIB</a>&nbsp;| 
+        <a href="https://assist-project.github.io/papers/DTLS-Fuzzer@ICST-22.pdf">PDF</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="ICST2022">4</a>]
+        </td>
+        <td class="bibtexitem">
+        Asadian Hooman, Paul Fiter&#x103;u-Brostean, Bengt Jonsson, and
+        Konstantinos Sagonas.
+        Applying symbolic execution to test implementations of a network
+        protocol against its specification.
+        2022.
+        [&nbsp;<a href="publications_bib.html#ICST2022">BIB</a>&nbsp;| 
+        <a href="https://assist-project.github.io/papers/ApplyingSymExec@ICST-22.pdf">PDF</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="USENIX2020">5</a>]
+        </td>
+        <td class="bibtexitem">
+        Paul Fiter&#x103;u-Brostean, Bengt Jonsson, Robert Merget, Joeri
+        de&nbsp;Ruiter, Konstantinos Sagonas, and Juraj Somorovsky.
+        Analysis of DTLS implementations using protocol state fuzzing.
+        In <em>29th USENIX Security Symposium (USENIX Security 20)</em>,
+        2020.
+        [&nbsp;<a href="publications_bib.html#USENIX2020">BIB</a>&nbsp;| 
+        <a href="https://www.usenix.org/system/files/sec20-fiterau-brostean.pdf">PDF</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="LATA2018">6</a>]
+        </td>
+        <td class="bibtexitem">
+        Rick Smetsers, Paul Fiter&#x103;u-Brostean, and Frits Vaandrager.
+        Model learning as a satisfiability modulo theories problem.
+        In <em>International Conference on Language and Automata Theory and
+        Applications</em>, pages 182--194. Springer, 2018.
+        [&nbsp;<a href="publications_bib.html#LATA2018">BIB</a>&nbsp;| 
+        <a href="publications/2018-LATA.pdf">PDF</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="FH2017">7</a>]
+        </td>
+        <td class="bibtexitem">
+        Paul Fiter&#x103;u-Brostean and Falk Howar.
+        Learning-based testing the sliding window behavior of TCP
+        implementations.
+        In <em>Critical Systems: Formal Methods and Automated Verification</em>,
+        pages 185--200. Springer, 2017.
+        [&nbsp;<a href="publications_bib.html#FH2017">BIB</a>&nbsp;| 
+        <a href="publications/2017-FMICS.pdf">PDF</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="SPIN2017">8</a>]
+        </td>
+        <td class="bibtexitem">
+        Paul Fiter&#x103;u-Brostean, Toon Lenaerts, Erik Poll, Joeri de&nbsp;Ruiter,
+        Frits Vaandrager, and Patrick Verleg.
+        Model learning and model checking of SSH implementations.
+        In <em>Proceedings of the 24th ACM SIGSOFT International SPIN
+        Symposium on Model Checking of Software</em>, SPIN 2017, pages 142--151. ACM,
+        2017.
+        [&nbsp;<a href="publications_bib.html#SPIN2017">BIB</a>&nbsp;| 
+        <a href="publications/2017-SPIN.pdf">PDF</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="FJV2016">9</a>]
+        </td>
+        <td class="bibtexitem">
+        Paul Fiter&#x103;u-Brostean, Ramon Janssen, and Frits Vaandrager.
+        Combining model learning and model checking to analyze TCP
+        implementations.
+        In <em>CAV 2016</em>, volume 9780 of <em>LNCS</em>, pages 454--471.
+        Springer, 2016.
+        [&nbsp;<a href="publications_bib.html#FJV2016">BIB</a>&nbsp;| 
+        <a href="publications/2016-CAV.pdf">PDF</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="AFKV15">10</a>]
+        </td>
+        <td class="bibtexitem">
+        Fides Aarts, Paul Fiter&#x103;u-Brostean, Harco Kuppens, and Frits
+        Vaandrager.
+        Learning register automata with fresh value generation.
+        In <em>ICTAC 2015</em>, volume 9399 of <em>LNCS</em>, pages 165--183.
+        Springer, 2015.
+        [&nbsp;<a href="publications_bib.html#AFKV15">BIB</a>&nbsp;| 
+        <a href="publications/2015-ICTAC.pdf">PDF</a>&nbsp;]
+        
+        </td>
+        </tr>
+        
+        
+        <tr valign="top">
+        <td align="right" class="bibtexnumber">
+        [<a name="FJV2014">11</a>]
+        </td>
+        <td class="bibtexitem">
+        Paul Fiter&#x103;u-Brostean, Ramon Janssen, and Frits Vaandrager.
+        Learning fragments of the TCP network protocol.
+        In <em>FMICS 2014</em>, volume 8718 of <em>LNCS</em>, pages 78--93.
+        Springer, 2014.
+        [&nbsp;<a href="publications_bib.html#FJV2014">BIB</a>&nbsp;| 
+        <a href="publications/2014-FMICS.pdf">PDF</a>&nbsp;]
+        
+        </td>
+        </tr>
+        </table>
+        </br> 
+        This list cannot be complete without my PhD thesis which mostly stitches these works together. 
+        A copy of the thesis can be found <a href="publications\2018-thesis.pdf">here</a>. What might be interesting to readers is the introduction, which gives
+        a unified overview of all the work done during my PhD. My thesis also features on the <a href="http://www.win.tue.nl/ipa/?event=active-model-learning-for-the-analysis-of-network-protocols">IPA website</a>.
+        I successfully defended my PhD thesis on the 13th of April 2018.
         </p>
 
         <div name="subtitle" id="hobbies">Hobbies</div>
         <p>
         I love singing, staying informed (thanks BBC), gaming and just going for a walk. Also do running, more for keeping my health in check than for the love of it.
         </p>
-        
+      
         <p><em>The publications section was generated with the help of 
-        <a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a> 1.99.</em></p>
+        <a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a> 1.98.</em></p>
 </body></html>
