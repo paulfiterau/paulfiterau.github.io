@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <!-- saved from url=(0038)http://www.cs.ru.nl/~pfiteraubrostean/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
         <title>My place of mind</title>
         <link rel="stylesheet" type="text/css" href="./files/global.css">
         <style>
@@ -10,7 +12,24 @@
                 color: red;
             }
         </style>
-    <style type="text/css"></style></head>
+        <style type="text/css"></style>
+        <script type="text/javascript">
+            class NumIter {
+                constructor() {
+                    this.num = 0;
+                }
+
+                next() {
+                    this.num ++;
+                    return this.num;
+                }
+            }
+            const iter = new NumIter()
+            function write_next() {
+                document.write(iter.next())
+            }
+        </script>
+    </head>
     <body>
         <!-- 
         <nav>
@@ -99,10 +118,43 @@
    
         
         <table>
+            <tr valign="top">
+                <td align="right" class="bibtexnumber">
+                [<a name="ISSTA2024"><script>write_next()</script></a>]
+                </td>
+                <td class="bibtexitem">
+                Paul Fiter&#x103;u-Brostean, Bengt Jonsson, Konstantinos Sagonas, and Fredrik
+                  Taquist.
+                 Smbugfinder: An automated framework for testing protocol
+                  implementations for state machine bugs.
+                 In <em>Proceedings of the 33rd ACM SIGSOFT International Symposium
+                  on Software Testing and Analysis (ISSTA)</em>, 2024.
+                [&nbsp;<a href="publications_bib.html#ISSTA2024">BIB</a>&nbsp;|
+                <a href="publications/2024-SMBugFinder.pdf">PDF</a>&nbsp;]
+                
+                </td>
+                </tr>
+                
+                
+                <tr valign="top">
+                <td align="right" class="bibtexnumber">
+                [<a name="ARES2024"><script>write_next()</script></a>]
+                </td>
+                <td class="bibtexitem">
+                Hooman Asadian, Paul Fiterau-Brostean, Bengt Jonsson, and Konstantinos Sagonas.
+                 Monitor-based testing of network protocol implementations using
+                  symbolic execution.
+                 In <em>Proceedings of the 19th International Conference on
+                  Availability, Reliability and Security (ARES)</em>, 2024.
+                [&nbsp;<a href="publications_bib.html#ARES2024">BIB</a>&nbsp;|
+                <a href="publications/2024-ARES.pdf">PDF</a>&nbsp;]
+                
+            </td>
+        </tr>
         
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="TACAS2024">1</a>]
+        [<a name="TACAS2024"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Simon Dierl, Fiter&#x103;u-Brostean, Paul, Falk Howar, Bengt
@@ -119,7 +171,7 @@
 
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="NDSS2023">2</a>]
+        [<a name="NDSS2023"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Fiter&#x103;u-Brostean, Paul, Bengt Jonsson, Konstantinos
@@ -136,7 +188,7 @@
 
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="DTLSFUZZER2022">3</a>]
+        [<a name="DTLSFUZZER2022"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Paul Fiter&#x103;u-Brostean, Bengt Jonsson, Konstantinos Sagonas, and
@@ -152,7 +204,7 @@
         
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="ICST2022">4</a>]
+        [<a name="ICST2022"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Asadian Hooman, Paul Fiter&#x103;u-Brostean, Bengt Jonsson, and
@@ -169,7 +221,7 @@
         
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="USENIX2020">5</a>]
+        [<a name="USENIX2020"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Paul Fiter&#x103;u-Brostean, Bengt Jonsson, Robert Merget, Joeri
@@ -186,7 +238,7 @@
         
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="LATA2018">6</a>]
+        [<a name="LATA2018"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Rick Smetsers, Paul Fiter&#x103;u-Brostean, and Frits Vaandrager.
@@ -202,7 +254,7 @@
         
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="FH2017">7</a>]
+        [<a name="FH2017"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Paul Fiter&#x103;u-Brostean and Falk Howar.
@@ -219,7 +271,7 @@
         
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="SPIN2017">8</a>]
+        [<a name="SPIN2017"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Paul Fiter&#x103;u-Brostean, Toon Lenaerts, Erik Poll, Joeri de&nbsp;Ruiter,
@@ -237,7 +289,7 @@
         
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="FJV2016">9</a>]
+        [<a name="FJV2016"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Paul Fiter&#x103;u-Brostean, Ramon Janssen, and Frits Vaandrager.
@@ -254,7 +306,7 @@
         
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="AFKV15">10</a>]
+        [<a name="AFKV15"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Fides Aarts, Paul Fiter&#x103;u-Brostean, Harco Kuppens, and Frits
@@ -271,7 +323,7 @@
         
         <tr valign="top">
         <td align="right" class="bibtexnumber">
-        [<a name="FJV2014">11</a>]
+        [<a name="FJV2014"><script>write_next()</script></a>]
         </td>
         <td class="bibtexitem">
         Paul Fiter&#x103;u-Brostean, Ramon Janssen, and Frits Vaandrager.
